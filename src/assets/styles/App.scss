@@ -1,13 +1,10 @@
+@import "./Vars.scss";
+@import "./Media.scss";
 
 body {
-    font-family: "Mulish", sans-serif;
+    font-family: $theme-font;
     margin: 0;
-    background: linear-gradient(
-      90deg,
-      hsla(154, 100%, 76%, 1) 0%,
-      hsla(234, 100%, 83%, 1) 50%,
-      hsla(288, 100%, 81%, 1) 100%
-    );
+    background: $main-color;
   }
 
   ::-webkit-scrollbar {
@@ -35,24 +32,4 @@ body {
   .container__notFound--image img {
     width: 75vh;
     outline: none;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .header__img {
-      width: 139px;
-    }
-
-    .main {
-      height: 200px;
-    }
-
-    .container__notFound--image img {
-      width: 43vh;
-      margin: 30% 0 25% 0;
-    }
-
-    .footer a {
-      text-align: center;
-      padding-left: 16px;
-    }
   }
