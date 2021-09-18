@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    border-radius: 0px 0px 40px 40px;
+  }
+
+.main_title {
+    color: white;
+    font-size: 25px;
+    outline: none;
+  }
+
+  .input {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: "Mulish", sans-serif;
+    border: 2px solid white;
+    border-radius: 30px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  .input:hover {
+    border: 2px solid #656fc5;
+  }
