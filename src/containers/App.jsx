@@ -17,15 +17,15 @@ const App = () => {
     <div className="App">
       <Header />
       <Search />
-
-      <Categories title="Mi lista">
-        <Carousel>
-          {initialState.trends.map((item) => (
-            <CarouselItem key={item.id} {...item} />
-          ))}
-        </Carousel>
-      </Categories>
-
+      {initialState.mylist.length > 0 && (
+        <Categories title="Mi lista">
+          <Carousel>
+            {initialState.mylist.map((item) => (
+              <CarouselItem key={item.id} {...item} />
+            ))}
+          </Carousel>
+        </Categories>
+      )}
       <Categories title="Tendencias">
         <Carousel>
           {initialState.trends.map((item) => (
@@ -36,7 +36,7 @@ const App = () => {
 
       <Categories title="Originales">
         <Carousel>
-          {initialState.trends.map((item) => (
+          {initialState.originals.map((item) => (
             <CarouselItem key={item.id} {...item} />
           ))}
         </Carousel>
