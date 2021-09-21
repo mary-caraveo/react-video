@@ -8,15 +8,15 @@ const Login = () => (
     <section className="login__container">
       <h2>Inicia sesión</h2>
       <form action="/index.html" className="login__container--form">
-        <input className="input" aria-label="correo" type="text" placeholder="correo" />
-        <input className="input" aria-label="contraseña" type="password" placeholder="contraseña" />
+        <input className="input-login" aria-label="correo" type="text" placeholder="correo" />
+        <input className="input-login" aria-label="contraseña" type="password" placeholder="contraseña" />
         <button className="button" type="button">Iniciar sesión</button>
         <div className="login__container--remember-me">
           <label>
             <input type="checkbox" name="" id="cbox1" value="checkbox" />
             Recuerdame
           </label>
-          <a href="/">Olvide mi contraseña</a>
+          <a href="#">Olvide mi contraseña</a>
         </div>
       </form>
 

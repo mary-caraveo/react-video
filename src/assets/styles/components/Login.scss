@@ -78,11 +78,25 @@
     outline: none;
   }
 
-  .input:hover {
+  .input-login {
+    font-family: "Mulish", sans-serif;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+  }
+
+  .input-login:hover {
     border-bottom: 2px solid #656fc5;
   }
 
-  ::placeholder {
+  .input-login::placeholder {
     color: purple;
   }
 
