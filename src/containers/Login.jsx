@@ -8,8 +8,8 @@ const Login = () => (
     <section className="login__container">
       <h2>Inicia sesión</h2>
       <form action="/index.html" className="login__container--form">
-        <input className="input-login" aria-label="correo" type="text" placeholder="correo" />
-        <input className="input-login" aria-label="contraseña" type="password" placeholder="contraseña" />
+        <input className="input-login" aria-label="correo" type="text" placeholder="Correo" />
+        <input className="input-login" aria-label="contraseña" type="password" placeholder="Contraseña" />
         <button className="button" type="button">Iniciar sesión</button>
         <div className="login__container--remember-me">
           <label>
@@ -33,7 +33,7 @@ const Login = () => (
       </section>
 
       <p className="login__container--register">No tienes ninguna cuenta
-        <a href="sign-up.html">Registrate</a>
+        <a href="sign-up.html"> Registrate</a>
       </p>
     </section>
   </section>
