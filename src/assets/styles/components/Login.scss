@@ -1,0 +1,105 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: 100vh;
+  }
+
+  .login__container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: purple;
+    padding: 60px 68px 40px;
+    min-height: 650px;
+    width: 300px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login__container--form label {
+    font-size: 14px;
+  }
+
+  .login__container--remember-me {
+    display: flex;
+    justify-content: space-between;
+    color: purple;
+    margin-top: 10px;
+  }
+
+  .login__container--remember-me a {
+    font-size: 14px;
+    color: purple;
+    text-decoration: none;
+  }
+
+  .login__container--remember-me a:hover {
+    text-decoration: underline;
+  }
+
+  .login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .login__container--social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .login__container--register {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .login__container--register a {
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .login__container--register a:hover {
+    text-decoration: underline;
+  }
+
+  .login__container h2 {
+    outline: none;
+  }
+
+  .input:hover {
+    border-bottom: 2px solid #656fc5;
+  }
+
+  ::placeholder {
+    color: purple;
+  }
+
+  .button {
+    font-family: "Mulish", sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    border: none;
+    color: purple;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+  }
+
+  .button:hover {
+  transform: scale(1.1);
+  }
