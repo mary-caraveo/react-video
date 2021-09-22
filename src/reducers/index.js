@@ -1,6 +1,8 @@
 const reducer = (state, action) => {
+  const itemId = state.myList.find((items) => items.id === action.payload.id);
   switch (action.type) {
     case "SET_FAVORITE":
+      if (itemId) return state;
       return {
         ...state,
         myList: [...state.myList, action.payload],
@@ -8,7 +10,7 @@ const reducer = (state, action) => {
     case "DELETE_FAVORITE":
       return {
         ...state,
-        myList: state.myList.filter(items => items.id !== action.payload),
+        myList: state.myList.filter((items) => items.id !== action.payload),
       };
     default:
       return state;
@@ -16,4 +18,3 @@ const reducer = (state, action) => {
 };
 
 export default reducer;
-
