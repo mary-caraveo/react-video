@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import { registerRequest } from '../actions';
 import '../assets/styles/components/Register.scss';
 
@@ -25,40 +26,43 @@ const Register = (props) => {
   };
 
   return (
-    <section className="register">
-      <section className="register__container">
-        <h2>Regístrate</h2>
-        <form className="register__container--form" onSubmit={handleSubmit}>
-          <input
-            name="name"
-            className="input-register"
-            type="text"
-            placeholder="Nombre"
-            onChange={handleInput}
-          />
-          <input
-            name="email"
-            className="input-register"
-            type="text"
-            placeholder="Correo"
-            onChange={handleInput}
-          />
-          <input
-            name="password"
-            className="input-register"
-            type="password"
-            placeholder="contraseña"
-            onChange={handleInput}
-          />
-          <button className="button" type="submit">
-            Registrarme
-          </button>
-        </form>
-        <p className="login_register">
-          <Link to="/login">Iniciar sesión</Link>
-        </p>
+    <>
+      <Header isRegister />
+      <section className="register">
+        <section className="register__container">
+          <h2>Regístrate</h2>
+          <form className="register__container--form" onSubmit={handleSubmit}>
+            <input
+              name="name"
+              className="input-register"
+              type="text"
+              placeholder="Nombre"
+              onChange={handleInput}
+            />
+            <input
+              name="email"
+              className="input-register"
+              type="text"
+              placeholder="Correo"
+              onChange={handleInput}
+            />
+            <input
+              name="password"
+              className="input-register"
+              type="password"
+              placeholder="contraseña"
+              onChange={handleInput}
+            />
+            <button className="button" type="submit">
+              Registrarme
+            </button>
+          </form>
+          <p className="login_register">
+            <Link to="/login">Iniciar sesión</Link>
+          </p>
+        </section>
       </section>
-    </section>
+    </>
   );
 };
 
