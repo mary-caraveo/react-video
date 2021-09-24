@@ -6,7 +6,7 @@ import googleIcon from '../assets/static/google-.png';
 import facebookIcon from '../assets/static/facebook-.png';
 import '../assets/styles/components/Login.scss';
 
-const Login = () => {
+const Login = (props) => {
   const [form, setValues] = useState({
     email: '',
   });
@@ -45,12 +45,10 @@ const Login = () => {
             placeholder="Contraseña"
             onChange={handleInput}
           />
-          <button className="button" type="button">
-            <Link to="/">Iniciar sesión</Link>
-          </button>
+          <button className="button" type="submit">Iniciar sesión</button>
           <div className="login__container--remember-me">
             <label>
-              <input type="checkbox" name="" id="cbox1" value="checkbox" />
+              <input type="checkbox" id="cbox1" value="checkbox" />
               Recuerdame
             </label>
             <a href="#">Olvide mi contraseña</a>
