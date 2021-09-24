@@ -1,24 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/register.scss';
+import '../assets/styles/components/Register.scss';
 
-const Register = () => (
-  <section className="register">
-    <section className="register__container">
-      <h2>Regístrate</h2>
-      <form className="register__container--form">
-        <input className="input-register" aria-label="Nombre" type="text" placeholder="Nombre" />
-        <input className="input-register" aria-label="Correo" type="text" placeholder="Correo" />
-        <input className="input-register" aria-label="contraseña" type="password" placeholder="contraseña" />
-        <button className="button" type="button">Registrarme</button>
-      </form>
-      <p className="login_register">
-        <Link to="/login">
-          Iniciar sesión
-        </Link>
-      </p>
+const Register = () => {
+  const [form, setValues] = useState({
+    email: '',
+    name: '',
+    password: '',
+  });
+
+  const handleInput = (event) => {
+    setValues({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  return (
+    <section className="register">
+      <section className="register__container">
+        <h2>Regístrate</h2>
+        <form className="register__container--form" onSubmit={handleSubmit}>
+          <input
+            name="name"
+            className="input-register"
+            type="text"
+            placeholder="Nombre"
+            onChange={handleInput}
+          />
+          <input
+            name="email"
+            className="input-register"
+            type="text"
+            placeholder="Correo"
+            onChange={handleInput}
+          />
+          <input
+            name="password"
+            className="input-register"
+            type="password"
+            placeholder="contraseña"
+            onChange={handleInput}
+          />
+          <button className="button" type="submit">
+            Registrarme
+          </button>
+        </form>
+        <p className="login_register">
+          <Link to="/login">Iniciar sesión</Link>
+        </p>
+      </section>
     </section>
-  </section>
-);
-
+  );
+};
 export default Register;

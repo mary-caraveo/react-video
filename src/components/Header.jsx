@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import gravatar from '../utils/gravatar';
 import { logoutRequest } from '../actions';
 import '../assets/styles/components/Header.scss';
@@ -13,6 +14,11 @@ const Header = (props) => {
 
   const handleLogout = () => {
     props.logoutRequest({});
+  };
+
+  Header.propTypes = {
+    user: PropTypes.object,
+    logoutRequest: PropTypes.func.isRequired,
   };
 
   return (
