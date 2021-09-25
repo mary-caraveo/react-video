@@ -7,6 +7,24 @@ body {
     background: $main-color;
   }
 
+  .button {
+    font-family: "Mulish", sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    border: none;
+    color: purple;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+  }
+
+  .button:hover {
+  transform: scale(1.1);
+  }
+
   ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
