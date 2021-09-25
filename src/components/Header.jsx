@@ -22,11 +22,6 @@ const Header = (props) => {
     isRegister,
   });
 
-  Header.propTypes = {
-    user: PropTypes.object,
-    logoutRequest: PropTypes.func.isRequired,
-  };
-
   return (
     <header className={headerClass}>
       <Link to="/">
@@ -75,6 +70,13 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   logoutRequest,
+};
+
+Header.propTypes = {
+  user: PropTypes.object.isRequired,
+  logoutRequest: PropTypes.func.isRequired,
+  isLogin: PropTypes.bool,
+  isRegister: PropTypes.bool,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
