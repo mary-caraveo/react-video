@@ -1,5 +1,6 @@
 const reducer = (state, action) => {
   const itemId = state.myList.find((items) => items.id === action.payload.id);
+  const listas = [...state.trends, ...state.originals];
   switch (action.type) {
     case 'SET_FAVORITE':
       if (itemId) return state;
@@ -32,6 +33,12 @@ const reducer = (state, action) => {
         ...state,
         playing: state.trends.find((item) => item.id === Number(action.payload)) ||
         state.originals.find((item) => item.id === Number(action.payload)) || [],
+      };
+    case 'GET_VIDEO_SEARCH':
+      if (action.payload === "") return { ...state, searchResult: [] };
+      return {
+        ...state,
+        searchResult: listas.filter((item) => item.title.toLowerCase().includes(action.payload.toLowerCase())),
       };
     default:
       return state;
