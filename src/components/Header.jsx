@@ -12,8 +12,8 @@ const Header = () => (
         <p>Perfil</p>
       </div>
       <ul>
-        <li><a href="./assets/componentes/not-found.html">Cuenta</a></li>
-        <li><a href="./assets/componentes/sign-in.html">Cerrar sesión</a></li>
+        <li><a href="#">Cuenta</a></li>
+        <li><a href="#">Cerrar sesión</a></li>
       </ul>
     </div>
   </header>
