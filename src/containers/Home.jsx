@@ -13,7 +13,7 @@ const Home = ({ myList, trends, originals, searchResult }) => {
       <Header />
       <Search isHome />
       {Object.keys(searchResult).length > 0 && (
-        <Categories title="Resultados de la busqueda...">
+        <Categories title='Resultados de la busqueda...'>
           <Carousel>
             {searchResult.map((item) => (
               <CarouselItem key={item.id} {...item} />
@@ -22,7 +22,7 @@ const Home = ({ myList, trends, originals, searchResult }) => {
         </Categories>
       )}
       {myList.length > 0 && (
-        <Categories title="Mi lista">
+        <Categories title='Mi lista'>
           <Carousel>
             {myList.map((item) => (
               <CarouselItem key={item.id} {...item} isList />
@@ -31,7 +31,7 @@ const Home = ({ myList, trends, originals, searchResult }) => {
         </Categories>
       )}
 
-      <Categories title="Tendencias">
+      <Categories title='Tendencias'>
         <Carousel>
           {trends.map((item) => (
             <CarouselItem key={item.id} {...item} />
@@ -39,7 +39,7 @@ const Home = ({ myList, trends, originals, searchResult }) => {
         </Carousel>
       </Categories>
 
-      <Categories title="Originales">
+      <Categories title='Originales'>
         <Carousel>
           {originals.map((item) => (
             <CarouselItem key={item.id} {...item} />

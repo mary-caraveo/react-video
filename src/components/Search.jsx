@@ -15,12 +15,12 @@ const Search = (props) => {
   };
 
   return (
-    <section className="main">
-      <h2 className="main_title">¿Qué quieres ver hoy?</h2>
+    <section className='main'>
+      <h2 className='main_title'>¿Qué quieres ver hoy?</h2>
       <input
         className={inputStyle}
-        type="text"
-        placeholder="Buscar..."
+        type='text'
+        placeholder='Buscar...'
         onChange={handleInput}
       />
     </section>

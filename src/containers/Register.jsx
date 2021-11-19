@@ -28,37 +28,37 @@ const Register = (props) => {
   return (
     <>
       <Header isRegister />
-      <section className="register">
-        <section className="register__container">
+      <section className='register'>
+        <section className='register__container'>
           <h2>Regístrate</h2>
-          <form className="register__container--form" onSubmit={handleSubmit}>
+          <form className='register__container--form' onSubmit={handleSubmit}>
             <input
-              name="name"
-              className="input-register"
-              type="text"
-              placeholder="Nombre"
+              name='name'
+              className='input-register'
+              type='text'
+              placeholder='Nombre'
               onChange={handleInput}
             />
             <input
-              name="email"
-              className="input-register"
-              type="text"
-              placeholder="Correo"
+              name='email'
+              className='input-register'
+              type='text'
+              placeholder='Correo'
               onChange={handleInput}
             />
             <input
-              name="password"
-              className="input-register"
-              type="password"
-              placeholder="contraseña"
+              name='password'
+              className='input-register'
+              type='password'
+              placeholder='contraseña'
               onChange={handleInput}
             />
-            <button className="button" type="submit">
+            <button className='button' type='submit'>
               Registrarme
             </button>
           </form>
-          <p className="login_register">
-            <Link to="/login">Iniciar sesión</Link>
+          <p className='login_register'>
+            <Link to='/login'>Iniciar sesión</Link>
           </p>
         </section>
       </section>

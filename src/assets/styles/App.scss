@@ -1,5 +1,5 @@
-@import "./Vars.scss";
-@import "./Media.scss";
+@import './Vars.scss';
+@import './Media.scss';
 
 body {
     font-family: $theme-font;
@@ -8,7 +8,7 @@ body {
   }
 
   .button {
-    font-family: "Mulish", sans-serif;
+    font-family: 'Mulish', sans-serif;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     border: none;

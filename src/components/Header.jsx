@@ -24,16 +24,16 @@ const Header = (props) => {
 
   return (
     <header className={headerClass}>
-      <Link to="/">
-        <img className="header__img" src={logo} alt="logo" />
+      <Link to='/'>
+        <img className='header__img' src={logo} alt='logo' />
       </Link>
 
-      <div className="header__menu">
-        <div className="header__menu--profile">
+      <div className='header__menu'>
+        <div className='header__menu--profile'>
           {hasUser ? (
             <img src={gravatar(user.email)} alt={user.email} />
           ) : (
-            <img src={userIcon} alt="user" />
+            <img src={userIcon} alt='user' />
           )}
 
           <p>Perfil</p>
@@ -41,19 +41,19 @@ const Header = (props) => {
         <ul>
           {hasUser ? (
             <li>
-              <Link to="/">{user.name}</Link>
+              <Link to='/'>{user.name}</Link>
             </li>
           ) : null}
 
           {hasUser ? (
             <li>
-              <Link to="/" onClick={handleLogout}>
+              <Link to='/' onClick={handleLogout}>
                 Cerrar Sesión
               </Link>
             </li>
           ) : (
             <li>
-              <Link to="/login">Iniciar Sesión</Link>
+              <Link to='/login'>Iniciar Sesión</Link>
             </li>
           )}
         </ul>
