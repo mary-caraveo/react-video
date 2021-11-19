@@ -15,7 +15,7 @@ const initialState = {
     {
       id: 2,
       slug: 'tvshow-8',
-      title: 'Venom',
+      title: 'Venom II',
       type: 'Action',
       language: 'English',
       year: 2012,
@@ -54,7 +54,7 @@ const initialState = {
     {
       id: 5,
       slug: 'tvshow-11',
-      title: 'Strange Angel',
+      title: 'Avengers, end game',
       type: 'War',
       language: 'English',
       year: 2015,
@@ -67,7 +67,7 @@ const initialState = {
     {
       id: 6,
       slug: 'tvshow-12',
-      title: 'Private Eyes',
+      title: 'Spider man',
       type: 'Comedy',
       language: 'English',
       year: 2018,
@@ -80,7 +80,7 @@ const initialState = {
     {
       id: 7,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Avengers',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -93,7 +93,7 @@ const initialState = {
     {
       id: 8,
       slug: 'tvshow-8',
-      title: 'Stargate Atlantis',
+      title: 'Capitán américa, el primer vengador',
       type: 'Action',
       language: 'English',
       year: 2012,
@@ -106,7 +106,7 @@ const initialState = {
     {
       id: 9,
       slug: 'tvshow-9',
-      title: 'Alien Highway',
+      title: 'Ant man - wasp',
       type: 'Action',
       language: 'English',
       year: 2019,
@@ -119,7 +119,7 @@ const initialState = {
     {
       id: 10,
       slug: 'tvshow-10',
-      title: 'Elementary',
+      title: 'Thor ragnarok',
       type: 'Animation',
       language: 'English',
       year: 2011,
@@ -134,7 +134,7 @@ const initialState = {
     {
       id: 11,
       slug: 'tvshow-11',
-      title: 'Strange Angel',
+      title: 'Iron man 1',
       type: 'War',
       language: 'English',
       year: 2015,
@@ -147,7 +147,7 @@ const initialState = {
     {
       id: 12,
       slug: 'tvshow-12',
-      title: 'Private Eyes',
+      title: 'Black panther',
       type: 'Comedy',
       language: 'English',
       year: 2018,
@@ -160,7 +160,7 @@ const initialState = {
     {
       id: 13,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'El increible HULK',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -173,7 +173,7 @@ const initialState = {
     {
       id: 14,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Capitán américa, Civil war',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -186,7 +186,7 @@ const initialState = {
     {
       id: 15,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Iron man 2',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -199,7 +199,7 @@ const initialState = {
     {
       id: 16,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Los vengadores',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -212,7 +212,7 @@ const initialState = {
     {
       id: 17,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Thor, el mundo oscuro',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -225,7 +225,7 @@ const initialState = {
     {
       id: 18,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Iron man 3',
       type: 'Drama',
       language: 'English',
       year: 2010,
@@ -238,7 +238,7 @@ const initialState = {
     {
       id: 19,
       slug: 'tvshow-13',
-      title: 'NCIS: Los Angeles',
+      title: 'Thor',
       type: 'Drama',
       language: 'English',
       year: 2010,
