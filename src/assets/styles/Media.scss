@@ -1,20 +1,19 @@
-
-  @media only screen and (max-width: 600px) {
-    .header__img {
-      width: 139px;
-    }
-
-    .main {
-      height: 200px;
-    }
-
-    .container__notFound--image img {
-      width: 43vh;
-      margin: 30% 0 25% 0;
-    }
-
-    .footer a {
-      text-align: center;
-      padding-left: 16px;
-    }
+@media only screen and (max-width: 600px) {
+  .header__img {
+    width: 139px;
   }
+
+  .main {
+    height: 200px;
+  }
+
+  .container__notFound--image img {
+    width: 43vh;
+    margin: 30% 0 25% 0;
+  }
+
+  .footer a {
+    text-align: center;
+    padding-left: 16px;
+  }
+}

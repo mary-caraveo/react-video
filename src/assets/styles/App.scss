@@ -1,35 +1,35 @@
-@import "./Vars.scss";
-@import "./Media.scss";
+@import './Vars.scss';
+@import './Media.scss';
 
 body {
-    font-family: $theme-font;
-    margin: 0;
-    background: $main-color;
-  }
+  font-family: $theme-font;
+  margin: 0;
+  background: $main-color;
+}
 
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
 
-  ::-webkit-scrollbar-track {
-    background: #bebdbd38;
-  }
+::-webkit-scrollbar-track {
+  background: #bebdbd38;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #ffffff48;
-  }
+::-webkit-scrollbar-thumb {
+  background: #ffffff48;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ffffffb2;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffffb2;
+}
 
-  .container__notFound {
-    display: flex;
-    justify-content: center;
-  }
+.container__notFound {
+  display: flex;
+  justify-content: center;
+}
 
-  .container__notFound--image img {
-    width: 75vh;
-    outline: none;
-  }
+.container__notFound--image img {
+  width: 75vh;
+  outline: none;
+}

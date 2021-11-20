@@ -14,10 +14,10 @@ const App = () => {
   return initialState.length === 0 ? (
     <h1>Loading</h1>
   ) : (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Search />
-      <Categories title="Mi lista">
+      <Categories title='Mi lista'>
         <Carousel>
           {initialState.mylist.map((item) => (
             <CarouselItem key={item.id} {...item} />
@@ -25,7 +25,7 @@ const App = () => {
         </Carousel>
       </Categories>
 
-      <Categories title="Tendencias">
+      <Categories title='Tendencias'>
         <Carousel>
           {initialState.trends.map((item) => (
             <CarouselItem key={item.id} {...item} />
@@ -33,7 +33,7 @@ const App = () => {
         </Carousel>
       </Categories>
 
-      <Categories title="Originales">
+      <Categories title='Originales'>
         <Carousel>
           {initialState.originals.map((item) => (
             <CarouselItem key={item.id} {...item} />
