@@ -28,4 +28,11 @@ video:hover .Player-back {
   border: 0;
   outline: 0;
   cursor: pointer;
+  margin: 10px;
+}
+
+.Player-back button:hover {
+  background: white;
+  transform: scale(1.1);
+  color: black;
 }
