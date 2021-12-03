@@ -5,6 +5,7 @@ body {
     font-family: $theme-font;
     margin: 0;
     background: $main-color;
+    background-attachment: fixed;
   }
 
   .button {
