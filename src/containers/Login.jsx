@@ -7,7 +7,7 @@ import googleIcon from '../assets/static/google-.png';
 import facebookIcon from '../assets/static/facebook-.png';
 import '../assets/styles/components/Login.scss';
 
-const Login = (props) => {
+const Login = ({ loginRequest, history }) => {
   const [form, setValues] = useState({
     email: '',
   });
@@ -21,8 +21,8 @@ const Login = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.loginRequest(form);
-    props.history.push('/');
+    loginRequest(form);
+    history.push('/');
   };
 
   return (

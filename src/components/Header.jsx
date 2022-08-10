@@ -9,8 +9,8 @@ import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo.png';
 import userIcon from '../assets/static/user.png';
 
-const Header = (props) => {
-  const { user, isLogin, isRegister } = props;
+const Header = ({ user, isLogin, isRegister }) => {
+
   const hasUser = Object.keys(user).length > 0;
 
   const handleLogout = () => {
