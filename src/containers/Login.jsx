@@ -52,11 +52,11 @@ const Login = ({ loginRequest, history }) => {
               Iniciar sesión
             </button>
             <div className='login__container--remember-me'>
-              <label>
+              <label htmlFor='cbox1'>
                 <input type='checkbox' id='cbox1' value='checkbox' />
                 Recuerdame
               </label>
-              <a href='#'>Olvide mi contraseña</a>
+              <a href='$'>Olvide mi contraseña</a>
             </div>
           </form>
 
